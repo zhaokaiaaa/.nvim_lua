@@ -1,0 +1,10 @@
+<<<<<<< HEAD
+{
+    "$schema": "https://raw.githubusercontent.com/sumneko/vscode-lua/master/setting/schema.json",
+    "Lua.workspace.checkThirdParty": false
+=======
+{
+    "$schema": "https://raw.githubusercontent.com/sumneko/vscode-lua/master/setting/schema.json",
+    "Lua.workspace.checkThirdParty": false
+>>>>>>> c55dfe196161d075ee4258a0b846acfdf8ed5f10
+}
