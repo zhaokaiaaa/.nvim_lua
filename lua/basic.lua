@@ -21,7 +21,7 @@ vim.o.hlsearch = true
 -- 搜索时自行判断是否需要忽略大小写
 vim.o.smartcase = true
 -- 支持鼠标拖拽
--- vim.o.mouse = "a"
+vim.o.mouse = "a"
 -- tab键转换为 4 个空格
 vim.o.tabstop = 4
 vim.o.softtabstop = 4
@@ -32,15 +32,9 @@ vim.bo.expandtab = true
 vim.o.autoindent = true
 vim.bo.autoindent = true
 vim.o.smartindent = true
-
--- << >> 缩进时移动的长度
-vim.o.shiftwidth = 4
-vim.bo.shiftwidth = 4
-
 -- 使用jk移动光标时，上下方保留8行
 vim.o.scrolloff = 8
 vim.o.sidescrolloff = 8
-
 -- 设置自动折叠
 vim.o.smartindent = true
 -- 历史命令最多保存1000条
@@ -51,3 +45,5 @@ vim.o.list = true
 vim.o.background = "dark"
 vim.o.termguicolors = true
 vim.opt.termguicolors = true
+
+vim.o.timeoutlen=500

@@ -1,6 +1,6 @@
 require('nvim-treesitter.configs').setup({
     -- 支持的语言
-    ensure_installed = {"html", "css", "vim", "lua", "javascript", "typescript", "c", "cpp", "python"},
+    ensure_installed = { "html", "vim", "lua", "javascript", "typescript", "markdown" },
     -- 启用代码高亮
     highlight = {
         enable = true,

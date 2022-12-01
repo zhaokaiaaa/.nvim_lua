@@ -3,7 +3,7 @@ require("auto-session").setup({
     log_level = "error",
     auto_session_suppress_dirs = {"~/", "~/Projects", "~/Downloads", "/", "/ect", "/usr"},
     auto_session_enable_last_session = false,
-    -- 保存session文件到 ~/.local/share/nvim/sessions目录
+    -- 保存session文件到 ~/AppData/Local/nvim-data/sessions目录
     auto_session_root_dir = vim.fn.stdpath('data').."/sessions/",
     auto_session_enabled = true,
     auto_save_enabled = nil,

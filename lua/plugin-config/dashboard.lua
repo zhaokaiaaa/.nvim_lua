@@ -1,16 +1,20 @@
+--[[local status, db = pcall(require, "dashboard")
+if not status then
+    vim.notify("没有找到 dashboard")
+    return
+end]]
 local db = require('dashboard')
-
 db.custom_header = {
-      '   ⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣤⣴⣶⣶⣶⣶⣶⠶⣶⣤⣤⣀⠀⠀⠀⠀⠀⠀ ',
-      ' ⠀⠀⠀⠀⠀⠀⠀⢀⣤⣾⣿⣿⣿⠁⠀⢀⠈⢿⢀⣀⠀⠹⣿⣿⣿⣦⣄⠀⠀⠀ ',
-      ' ⠀⠀⠀⠀⠀⠀⣴⣿⣿⣿⣿⣿⠿⠀⠀⣟⡇⢘⣾⣽⠀⠀⡏⠉⠙⢛⣿⣷⡖⠀ ',
-      ' ⠀⠀⠀⠀⠀⣾⣿⣿⡿⠿⠷⠶⠤⠙⠒⠀⠒⢻⣿⣿⡷⠋⠀⠴⠞⠋⠁⢙⣿⣄ ',
-      ' ⠀⠀⠀⠀⢸⣿⣿⣯⣤⣤⣤⣤⣤⡄⠀⠀⠀⠀⠉⢹⡄⠀⠀⠀⠛⠛⠋⠉⠹⡇ ',
-      ' ⠀⠀⠀⠀⢸⣿⣿⠀⠀⠀⣀⣠⣤⣤⣤⣤⣤⣤⣤⣼⣇⣀⣀⣀⣛⣛⣒⣲⢾⡷ ',
-      ' ⢀⠤⠒⠒⢼⣿⣿⠶⠞⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠁⠀⣼⠃ ',
-      ' ⢮⠀⠀⠀⠀⣿⣿⣆⠀⠀⠻⣿⡿⠛⠉⠉⠁⠀⠉⠉⠛⠿⣿⣿⠟⠁⠀⣼⠃⠀ ',
-      ' ⠈⠓⠶⣶⣾⣿⣿⣿⣧⡀⠀⠈⠒⢤⣀⣀⡀⠀⠀⣀⣀⡠⠚⠁⠀⢀⡼⠃⠀⠀ ',
-      ' ⠀⠀⠀⠈⢿⣿⣿⣿⣿⣿⣷⣤⣤⣤⣤⣭⣭⣭⣭⣭⣥⣤⣤⣤⣴⣟⠁    ',
+    [[]],
+    [[          ▀████▀▄▄              ▄█ ]],
+    [[            █▀    ▀▀▄▄▄▄▄    ▄▄▀▀█ ]],
+    [[    ▄        █          ▀▀▀▀▄  ▄▀  ]],
+    [[   ▄▀ ▀▄      ▀▄              ▀▄▀  ]],
+    [[  ▄▀    █     █▀   ▄█▀▄      ▄█    ]],
+    [[  ▀▄     ▀▄  █     ▀██▀     ██▄█   ]],
+    [[   ▀▄    ▄▀ █   ▄██▄   ▄  ▄  ▀▀ █  ]],
+    [[    █  ▄▀  █    ▀██▀    ▀▀ ▀▀  ▄▀  ]],
+    [[   █   █  █      ▄▄           ▄▀   ]],
 }
 
 db.custom_center = {
@@ -22,15 +26,4 @@ db.custom_center = {
     {icon = "  ", desc = "Open Personal dotfiles      ", shortcut = "leader e e", action = "edit $MYVIMRC"}
 }
 
-db.custom_footer = function()
-    local footer = {'', '🎉 Have fun with neovim'}
-    if packer_plugins ~= nil then
-        local count = #vim.tbl_keys(packer_plugins)
-        footer[2] = '🎉 neovim loaded ' .. count .. ' plugins'
-        for key, value in pairs(packer_plugins) do
-            table.insert(footer, '✨  ' .. key)
-        end
-    end
-
-    return footer
-end
+db.custom_footer = { '', '🎉 Have fun with neovim' }

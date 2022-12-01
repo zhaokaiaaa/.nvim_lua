@@ -23,11 +23,11 @@ local wk = require("which-key")
 --     }
 -- }, {silent = true, noremap = true})
 wk.register({
-  ["s"] = {
+  ["w"] = {
     name = "split window",
-    v = { ":vsp<CR>", "vertical split window" },
+    j = { ":set splitbelow<CR>:split<CR>", "vertical split window" },
     h = { ":sh<CR>", "horizontal split window"},
-    c = { ":close<CR>", "close this window"},
+    c = { "<C-W>c", "close this window"},
     o = { ":only<CR>", "close all but this window"},
   },
 })
