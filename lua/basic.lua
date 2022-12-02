@@ -46,4 +46,3 @@ vim.o.background = "dark"
 vim.o.termguicolors = true
 vim.opt.termguicolors = true
 
-vim.o.timeoutlen=500

@@ -32,3 +32,4 @@ wk.register({
   },
 })
 wk.setup({})
+vim.o.timeoutlen=500

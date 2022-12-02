@@ -43,7 +43,7 @@ vim.api.nvim_set_keymap("n", "<leader><CR>", ":nohlsearch<CR>", { noremap = true
 vim.api.nvim_set_keymap("n", "<leader>A", "maggVG", { noremap = true, silent = true })
 
 -- Press space twice to jump to the next '<++>' and edit it
-vim.api.nvim_set_keymap("n", "<leader>f", "<Esc>/<++><CR>:nohlsearch<CR>c4l", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<leader><leader>", "<Esc>/<++><CR>:nohlsearch<CR>c4l", { noremap = true, silent = true })
 
 -- Insert after (
 vim.api.nvim_set_keymap("n", "<leader>i", "f(a", { noremap = true, silent = true })
@@ -60,7 +60,7 @@ vim.api.nvim_set_keymap("n", "<leader>P", "\"bp", { noremap = true, silent = tru
 -- CloseThis
 vim.api.nvim_set_keymap("n", "<leader>q", ":q!<CR>", { noremap = true, silent = true })
 -- CloseThis
-vim.api.nvim_set_keymap("n", "<leader>wq", ":wq<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<leader>wq", ":w<CR>:q<CR>", { noremap = true, silent = true })
 
 --w
 --[[
