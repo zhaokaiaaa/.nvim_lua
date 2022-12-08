@@ -41,8 +41,3 @@ vim.o.smartindent = true
 vim.o.history = 1000
 -- 显示空白字符
 vim.o.list = true
--- 样式
-vim.o.background = "dark"
-vim.o.termguicolors = true
-vim.opt.termguicolors = true
-

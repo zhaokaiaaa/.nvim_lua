@@ -13,4 +13,7 @@ require("nvim-tree").setup({
         enable = true
     },
 })
-vim.api.nvim_set_keymap("n", "<leader>e", ":NvimTreeToggle<CR>", {noremap = true, silent = true})
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+-- 设置 termguicolors 以启用高亮组
+vim.opt.termguicolors = true

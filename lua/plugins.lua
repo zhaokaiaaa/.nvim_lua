@@ -48,6 +48,8 @@ packer.startup(function(use)
         'nvim-lualine/lualine.nvim',
         requires = { 'nvim-tree/nvim-web-devicons', opt = true }
     }
+    use {'vim-airline/vim-airline'}
+    use {'vim-airline/vim-airline-themes'}
     use { 'rmagatti/auto-session' }
     --启动页面
     use { 'glepnir/dashboard-nvim' }
@@ -66,6 +68,9 @@ packer.startup(function(use)
         } }
     }
     use { "nvim-telescope/telescope-file-browser.nvim" }
+    --快速跳转
+    use {"ggandor/leap.nvim" }
+    use {"ggandor/flit.nvim" }
     --lsp配置
     use { "williamboman/mason.nvim" }
     use { "neovim/nvim-lspconfig" }
