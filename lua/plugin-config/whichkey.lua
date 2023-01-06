@@ -127,6 +127,7 @@ wk.register({
                 ["<ga>"] = { "'.", "last changed in current buffer(file)" },
                 H = { ":BufferLineCyclePrev<CR>", "BufferLineCyclePrev" },
                 L = { ":BufferLineCycleNext<CR>", "BufferLineCycleNext" },
+                ["<C-S-L>"] = { ":Vista<CR>", "Vista" },
             }
         },
         i = {
@@ -210,6 +211,7 @@ wk.register({
 wk.register({
     H = { ":BufferLineCyclePrev<CR>", "BufferLineCyclePrev" },
     L = { ":BufferLineCycleNext<CR>", "BufferLineCycleNext" },
+    ["<C-S-L>"] = { ":Vista<CR>", "Vista" },
 }, optsNoLeader)
 
 wk.register({
@@ -234,7 +236,7 @@ wk.register({
         l = { "<C-W>l", "Cursor to right window" },
         q = { ":w<CR>:q<CR>", "Quit and Save" },
     },
-}, optsNoLeader)
+}, optsHasLeader)
 
 wk.register({
     s = { "<NOP>", "取消s键位默认功能" },

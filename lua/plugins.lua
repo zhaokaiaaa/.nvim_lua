@@ -1,6 +1,6 @@
 -- 自动安装 Packer.nvim
 -- 插件安装目录
--- ~/AppData/nvim-data/site/pack/packer/
+-- ~/AppData/Local/nvim-data/site/pack/packer/
 local fn = vim.fn
 local install_path = fn.stdpath("data") .. "/site/pack/packer/start/packer.nvim"
 local paccker_bootstrap
@@ -48,8 +48,8 @@ packer.startup(function(use)
         'nvim-lualine/lualine.nvim',
         requires = { 'nvim-tree/nvim-web-devicons', opt = true }
     }
-    use {'vim-airline/vim-airline'}
-    use {'vim-airline/vim-airline-themes'}
+    use { 'vim-airline/vim-airline' }
+    use { 'vim-airline/vim-airline-themes' }
     use { 'rmagatti/auto-session' }
     --启动页面
     use { 'glepnir/dashboard-nvim' }
@@ -69,8 +69,8 @@ packer.startup(function(use)
     }
     use { "nvim-telescope/telescope-file-browser.nvim" }
     --快速跳转
-    use {"ggandor/leap.nvim" }
-    use {"ggandor/flit.nvim" }
+    use { "ggandor/leap.nvim" }
+    use { "ggandor/flit.nvim" }
     --lsp配置
     use { "williamboman/mason.nvim" }
     use { "neovim/nvim-lspconfig" }
@@ -105,9 +105,12 @@ packer.startup(function(use)
     -- 自动表格创建器和格式化程序
     use { 'dhruvasagar/vim-table-mode' }
     -- 照片
-    use { 'ferrine/md-img-paste.vim' }
+    --use { 'ferrine/md-img-paste.vim' }
+    use { 'img-paste-devs/img-paste.vim' }
     --代码片段
     use { 'SirVer/ultisnips' }
+    --侧边栏
+    use {'liuchengxu/vista.vim' }
     if paccker_bootstrap then
         packer.sync()
     end

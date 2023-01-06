@@ -6,10 +6,8 @@
 vim.o.vim_markdown_folding_disabled = 1
 --======md-img-pasete.vim====
 --设置快捷键 Ctrl+p  粘贴剪切板中的图片
-vim.api.nvim_set_keymap("n", "<C-p>", ":call mdip#MarkdownClipboardImage()<CR>F%i", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<C-p>", ":call mdip#MarkdownClipboardImage()<CR><ESC>j", { noremap = true, silent = true })
 --设置默认储存文件夹。这里表示储存在当前文档所在文件夹下的'pic'文件夹下，相当于 ./pic/
-vim.o.mdip_imgdir = 'E:/MarkdownPic/'
-vim.o.mdip_imgname = 'image'
 --======MarkdownPreview====
 --[[
     zr: 降低整个缓冲区的折叠级别
