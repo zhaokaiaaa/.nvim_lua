@@ -78,11 +78,6 @@ packer.startup(function(use)
     -- 照片
     use { 'img-paste-devs/img-paste.vim' }
     --代码片段
-    use { 'saadparwaiz1/cmp_luasnip' }
-    use { 'L3MON4D3/LuaSnip' }
-    use { 'rafamadriz/friendly-snippets' }
-    --目录栏
-    use { 'liuchengxu/vista.vim' }
     use { 'SirVer/ultisnips' }
     --目录栏
     use { 'liuchengxu/vista.vim' }
