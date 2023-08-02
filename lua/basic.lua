@@ -3,9 +3,10 @@
 --fileencodings是Vim自动探测fileencoding的顺序列表，启动时会按照它所列出的字符编码方式逐一探测即将打开的文件的字符编码方式
 -- 设置文件编码格式为 utf-8
 vim.o.encoding = "utf-8"
-vim.o.fileencodings="utf8,ucs-bom,gbk,cp936,gb2312,gb18030"
+vim.o.fileencodings = "utf8,ucs-bom,gbk,cp936,gb2312,gb18030"
 -- 设置终端编码格式为 utf-8
-vim.o.termencoding = "utf-8"
+--NVIM v0.10.0-dev-742+g12ccea596版本后移除该属性
+--vim.o.termencoding = "utf-8"
 -- 开启语法高亮
 vim.o.syntax = "enable"
 -- 显示相对行号
@@ -53,5 +54,5 @@ vim.o.history = 1000
 vim.o.list = true
 vim.o.listchars = 'tab:|\\ ,trail:▫'
 --python 配置
-vim.g.python3_host_prog='D:/Program Files (x86)/Python311/python.exe'
-vim.g.python_host_prog='D:/Program Files (x86)/Python27/python.exe'
+vim.g.python3_host_prog = 'D:/Program Files (x86)/Python311/python.exe'
+vim.g.python_host_prog = 'D:/Program Files (x86)/Python27/python.exe'

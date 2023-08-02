@@ -92,6 +92,8 @@ packer.startup(function(use)
     use { 'mg979/vim-visual-multi', branch = 'master' }
     --快捷键提示
     use { "folke/which-key.nvim" }
+    --复制高亮
+    use { 'machakann/vim-highlightedyank' }
     if paccker_bootstrap then
         packer.sync()
     end
