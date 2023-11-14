@@ -22,7 +22,10 @@ if vim.fn.has "nvim-0.7" then
         group = auto_indent,
         command = 'normal! gg=G``'
     })
-
+    if vim.g.neovide then
+        local neovide = require ("plugin-config/neovide")
+        neovide.init()
+    end
 else
     vim.cmd [[
         augroup NVIMRC

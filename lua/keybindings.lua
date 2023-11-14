@@ -36,6 +36,7 @@ local pluginKeys = {}
 
 pluginKeys.nvimTreeList = {
     -- 打开文件或文件夹
+    --{ key = { "<CR>", "o", "<2-LeftMouse>" }, action = "tabnew" },
     { key = { "<CR>", "o", "<2-LeftMouse>" }, action = "tabnew" },
     { key = "e", action = "edit" },
     -- 分屏打开文件

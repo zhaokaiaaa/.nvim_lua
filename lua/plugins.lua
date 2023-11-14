@@ -49,7 +49,7 @@ packer.startup(function(use)
     -- 标签页显示
     use { 'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons' }
     --标签页下的文件显示
-    use { 'Bekaboo/dropbar.nvim' }
+    --use { 'Bekaboo/dropbar.nvim', requires = 'nvim-telescope/telescope-fzf-native' }
     -- 目录管理
     use {
         'nvim-tree/nvim-tree.lua',

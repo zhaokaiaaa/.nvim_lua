@@ -16,7 +16,7 @@ require("plugin-config/bufferline")
 require("plugin-config/bufferline")
 -- 标签栏
 require("plugin-config/bufferline")
-require("plugin-config/winbar")
+-- require("plugin-config/winbar")
 -- 侧边栏
 require("plugin-config/nvimtree")
 --底部状态栏
