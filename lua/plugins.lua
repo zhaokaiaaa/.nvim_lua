@@ -35,7 +35,7 @@ packer.startup(function(use)
     use { 'glepnir/dashboard-nvim' }
     --文件和文本搜索
     use {
-        'nvim-telescope/telescope.nvim', tag = '0.1.1',
+        'nvim-telescope/telescope.nvim',
         requires = { { 'nvim-lua/plenary.nvim' }, {
             'nvim-treesitter/nvim-treesitter',
             run = function()
@@ -46,10 +46,9 @@ packer.startup(function(use)
     use { "nvim-telescope/telescope-file-browser.nvim" }
     -- 主题配置
     use { "ellisonleao/gruvbox.nvim" }
+    use { 'rebelot/kanagawa.nvim' }
     -- 标签页显示
     use { 'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons' }
-    --标签页下的文件显示
-    --use { 'Bekaboo/dropbar.nvim', requires = 'nvim-telescope/telescope-fzf-native' }
     -- 目录管理
     use {
         'nvim-tree/nvim-tree.lua',
@@ -94,6 +93,9 @@ packer.startup(function(use)
     use { "folke/which-key.nvim" }
     --复制高亮
     use { 'machakann/vim-highlightedyank' }
+    --引导线
+    use { 'lukas-reineke/indent-blankline.nvim' }
+
     if paccker_bootstrap then
         packer.sync()
     end
